@@ -24,11 +24,11 @@
     android:layout_height="match_parent" >
 
     <RelativeLayout
+        android:id="@+id/layoutCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/layoutCard"
         android:layout_margin="@dimen/list_item_padding"
-        android:background="@drawable/card" >
+        android:background="@android:color/holo_purple">
 
         <LinearLayout
             android:id="@+id/layoutFileDetails"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@+id/imgFileIcon"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tvFileName"
@@ -59,8 +59,8 @@
             android:id="@+id/imgFileIcon"
             android:layout_width="@dimen/list_icon_size"
             android:layout_height="@dimen/list_icon_size"
-            android:layout_alignParentLeft="true"
             android:layout_alignTop="@+id/layoutFileDetails"
+            android:layout_alignParentLeft="true"
             android:background="#ffffff"
             android:padding="@dimen/list_item_padding"
             android:scaleType="center"
